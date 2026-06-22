@@ -37,8 +37,7 @@ body{
 }
 
 .hero h1{
-    font-size:64px;
-    margin-bottom:10px;
+    font-size:70px;
 }
 
 .hero h1 span{
@@ -47,50 +46,31 @@ body{
     color:transparent;
 }
 
-.hero h2{
-    font-weight:400;
-    color:#cbd5e1;
-    margin-bottom:20px;
-}
-
 .hero p{
-    max-width:750px;
-    margin:auto;
+    max-width:800px;
+    margin:20px auto;
     color:#94a3b8;
     font-size:18px;
     line-height:1.6;
 }
 
-.buttons{
-    margin-top:30px;
-}
-
 .btn{
     display:inline-block;
     padding:14px 28px;
+    margin:10px;
     border-radius:12px;
     text-decoration:none;
     font-weight:600;
-    margin:10px;
-    transition:0.3s;
 }
 
 .btn-primary{
     background:linear-gradient(90deg,#2563eb,#7c3aed);
-    color:white;
-}
-
-.btn-primary:hover{
-    transform:translateY(-3px);
+    color:#fff;
 }
 
 .btn-secondary{
     border:1px solid rgba(255,255,255,0.2);
-    color:white;
-}
-
-.btn-secondary:hover{
-    background:rgba(255,255,255,0.1);
+    color:#fff;
 }
 
 /* SECTIONS */
@@ -100,18 +80,11 @@ section{
     margin:auto;
 }
 
-.section-title{
+.title{
     font-size:32px;
-    margin-bottom:30px;
     text-align:center;
+    margin-bottom:40px;
     color:#e2e8f0;
-}
-
-/* GRID */
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
 }
 
 /* CARDS */
@@ -121,17 +94,14 @@ section{
     padding:25px;
     border-radius:16px;
     backdrop-filter:blur(10px);
-    transition:0.3s;
+    margin-bottom:20px;
 }
 
-.card:hover{
-    transform:translateY(-5px);
-    background:rgba(255,255,255,0.08);
-}
-
-.card h3{
-    margin-bottom:10px;
-    color:#93c5fd;
+/* GRID */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
 }
 
 /* SKILLS */
@@ -139,27 +109,23 @@ section{
     display:inline-block;
     padding:8px 12px;
     margin:5px;
-    border-radius:20px;
     background:rgba(99,102,241,0.2);
+    border-radius:20px;
     font-size:13px;
 }
 
-/* STATS */
-.stats{
-    display:flex;
-    justify-content:center;
-    gap:40px;
-    flex-wrap:wrap;
-    margin-top:40px;
+/* TIMELINE */
+.timeline{
+    border-left:2px solid #4f46e5;
+    padding-left:20px;
 }
 
-.stat{
-    text-align:center;
+.timeline div{
+    margin-bottom:25px;
 }
 
-.stat h3{
-    font-size:36px;
-    color:#a78bfa;
+.timeline h3{
+    color:#93c5fd;
 }
 
 /* CONTACT */
@@ -178,7 +144,6 @@ footer{
     text-align:center;
     padding:30px;
     color:#64748b;
-    border-top:1px solid rgba(255,255,255,0.1);
 }
 </style>
 
@@ -191,33 +156,17 @@ footer{
 <div class="hero">
     <div>
         <h1>Cristina <span>Bautista</span></h1>
-        <h2>Executive Assistant • Website Designer • Graphic Designer • Lead Researcher</h2>
         <p>
-            I help entrepreneurs and businesses streamline operations, manage workflows,
-            build high-converting websites, and support executive-level tasks with precision
-            and creativity.
+            Executive Assistant • Website Designer • Graphic Designer • Lead Researcher
+        </p>
+        <p>
+            Highly experienced professional with 15+ years in administrative support,
+            CRM systems, website creation, lead research, documentation, and business operations.
         </p>
 
 ```
-    <div class="buttons">
-        <a href="#contact" class="btn btn-primary">Hire Me</a>
-        <a href="#about" class="btn btn-secondary">Learn More</a>
-    </div>
-
-    <div class="stats">
-        <div class="stat">
-            <h3>15+</h3>
-            <p>Years Experience</p>
-        </div>
-        <div class="stat">
-            <h3>100+</h3>
-            <p>Projects</p>
-        </div>
-        <div class="stat">
-            <h3>40+</h3>
-            <p>Tools</p>
-        </div>
-    </div>
+    <a href="#contact" class="btn btn-primary">Hire Me</a>
+    <a href="#experience" class="btn btn-secondary">View Experience</a>
 </div>
 ```
 
@@ -225,66 +174,85 @@ footer{
 
 <!-- ABOUT -->
 
-<section id="about">
-    <h2 class="section-title">About Me</h2>
-
-```
-<div class="card">
-    Highly experienced Executive Assistant, Website & Funnel Designer, Graphic Designer,
-    and Lead Researcher with a strong background in administrative operations, CRM systems,
-    digital marketing support, and creative design solutions.
-</div>
-```
-
+<section>
+    <div class="card">
+        <h2 class="title">Professional Summary</h2>
+        Highly organized Executive Assistant, Website & Funnel Designer, Graphic Designer,
+        and Lead Researcher with 15+ years of experience in administrative support, CRM management,
+        lead generation, and digital design. Skilled in workflow optimization, document preparation,
+        client communication, and website development.
+    </div>
 </section>
 
 <!-- SKILLS -->
 
 <section>
-    <h2 class="section-title">Core Skills</h2>
+    <h2 class="title">Core Skills & Tools</h2>
     <div class="card skills">
         <span>Executive Assistance</span>
         <span>Calendar Management</span>
         <span>Email Management</span>
-        <span>CRM (Zoho, HubSpot)</span>
-        <span>Website Design</span>
-        <span>Funnels</span>
-        <span>Graphic Design</span>
-        <span>Lead Research</span>
-        <span>Data Entry</span>
-        <span>Project Coordination</span>
-        <span>Canva</span>
+        <span>CRM (Zoho, HubSpot, Pipedrive)</span>
+        <span>GoHighLevel</span>
         <span>Squarespace</span>
         <span>WordPress</span>
+        <span>Wix</span>
+        <span>Canva</span>
+        <span>CapCut</span>
+        <span>Lead Research</span>
+        <span>Boolean Search</span>
+        <span>Data Entry</span>
+        <span>Project Coordination</span>
+        <span>Graphic Design</span>
     </div>
 </section>
 
 <!-- EXPERIENCE -->
 
-<section>
-    <h2 class="section-title">Experience</h2>
+<section id="experience">
+    <h2 class="title">Professional Experience</h2>
 
 ```
-<div class="grid">
+<div class="timeline">
 
-    <div class="card">
+    <div>
         <h3>Executive Assistant</h3>
-        <p>Managed executive calendars, emails, CRM systems, documents, and workflow coordination.</p>
+        <p>Managed executive schedules, inboxes, CRM systems, documentation, and internal communication workflows.</p>
     </div>
 
-    <div class="card">
-        <h3>Website Designer</h3>
-        <p>Built landing pages, funnels, and business websites with conversion-focused design.</p>
+    <div>
+        <h3>Website & Funnel Designer</h3>
+        <p>Built landing pages, sales funnels, and business websites with conversion-focused design.</p>
     </div>
 
-    <div class="card">
+    <div>
         <h3>Graphic Designer</h3>
-        <p>Created branding materials, social media graphics, and marketing visuals.</p>
+        <p>Created branding materials, social media content, presentations, and marketing assets.</p>
     </div>
 
-    <div class="card">
+    <div>
         <h3>Lead Researcher</h3>
-        <p>Performed detailed lead research, verification, and data organization for businesses.</p>
+        <p>Conducted advanced lead research, verification, and data organization for business development teams.</p>
+    </div>
+
+    <div>
+        <h3>Senior Quality Assurance Specialist (USA - California)</h3>
+        <p>Audited data accuracy, ensured compliance, and improved internal quality systems.</p>
+    </div>
+
+    <div>
+        <h3>Processing Coordinator & Lead Researcher</h3>
+        <p>Prepared legal documents, managed contracts, and conducted detailed research for structured deals.</p>
+    </div>
+
+    <div>
+        <h3>Lead Researcher (UK)</h3>
+        <p>Performed SMB lead research using Boolean search and verified prospect data for outreach campaigns.</p>
+    </div>
+
+    <div>
+        <h3>Data Encoder (Philippines)</h3>
+        <p>Achieved 50–60 WPM with high accuracy while handling large-scale data encoding tasks.</p>
     </div>
 
 </div>
@@ -295,7 +263,7 @@ footer{
 <!-- CONTACT -->
 
 <section id="contact">
-    <h2 class="section-title">Contact</h2>
+    <h2 class="title">Contact</h2>
 
 ```
 <div class="card contact">
