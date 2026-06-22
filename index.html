@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -9,11 +8,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
 body{
+margin:0;
 font-family:Poppins,sans-serif;
-background:#0b1220;
-color:#fff;
+background:#0b0b0b;
+color:#eaeaea;
+line-height:1.6;
 }
 
 .hero{
@@ -23,174 +23,213 @@ align-items:center;
 justify-content:center;
 text-align:center;
 padding:40px;
-background:
-radial-gradient(circle at top left,#7c3aed 0%,transparent 45%),
-radial-gradient(circle at bottom right,#2563eb 0%,transparent 45%),
-#0b1220;
+background:radial-gradient(circle at top,#1a1a1a,#0b0b0b);
 }
 
-.hero h1{font-size:70px}
-.hero h1 span{
-background:linear-gradient(90deg,#60a5fa,#a78bfa);
--webkit-background-clip:text;
-color:transparent;
+.profile-img{
+width:140px;
+height:140px;
+border-radius:50%;
+border:3px solid #d4af37;
+object-fit:cover;
+margin-bottom:20px;
 }
 
-.hero p{
-max-width:800px;
-margin:20px auto;
-color:#cbd5e1;
-line-height:1.6;
+h1{
+font-size:52px;
+margin:10px 0;
+}
+
+h1 span{
+color:#d4af37;
+}
+
+h2{
+color:#bdbdbd;
+font-weight:400;
+}
+
+.btn{
+display:inline-block;
+padding:12px 22px;
+margin:10px;
+border-radius:10px;
+text-decoration:none;
+font-weight:600;
+}
+
+.btn-primary{
+background:#d4af37;
+color:#000;
+}
+
+.btn-secondary{
+border:1px solid #444;
+color:#fff;
 }
 
 section{
-padding:80px 20px;
-max-width:1100px;
+padding:70px 20px;
+max-width:1000px;
 margin:auto;
 }
 
 .title{
-font-size:30px;
 text-align:center;
+font-size:28px;
+color:#d4af37;
 margin-bottom:30px;
-color:#e2e8f0;
 }
 
 .card{
-background:rgba(255,255,255,0.05);
-border:1px solid rgba(255,255,255,0.1);
-padding:25px;
-border-radius:16px;
-margin-bottom:20px;
-backdrop-filter:blur(10px);
-}
-
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
+background:#151515;
+padding:20px;
+border-radius:12px;
+margin-bottom:15px;
+border:1px solid #222;
 }
 
 .skills span{
 display:inline-block;
-padding:8px 12px;
+background:#1f1f1f;
+border:1px solid #333;
+padding:6px 10px;
 margin:5px;
-background:rgba(99,102,241,0.2);
 border-radius:20px;
 font-size:13px;
 }
 
-.contact{
-text-align:center;
+.job-title{
+color:#d4af37;
+font-weight:600;
 }
 
-.contact p{
-margin:8px 0;
-color:#cbd5e1;
+.meta{
+color:#999;
+font-size:13px;
+margin-bottom:10px;
 }
 
 footer{
 text-align:center;
 padding:30px;
-color:#64748b;
-border-top:1px solid rgba(255,255,255,0.1);
+color:#777;
+border-top:1px solid #222;
 }
 </style>
-
 </head>
 
 <body>
 
 <!-- HERO -->
-
 <div class="hero">
 <div>
+<img class="profile-img" src="https://drive.usercontent.google.com/download?id=1PmoSpKWhAUODtKeHvARu3uR7i4rGtPe-&export=view">
+
 <h1>Cristina <span>Bautista</span></h1>
-<p>
-Executive Assistant • Website & Funnel Designer • Graphic Designer • Lead Researcher
+<h2>Executive Assistant • Website Designer • Graphic Designer</h2>
+
+<p style="max-width:800px;margin:auto;color:#bbb;">
+15+ years of experience in executive support, CRM management, website design, lead research, and administrative operations.
 </p>
-<p>
-Seasoned professional with 15+ years of experience in administrative operations,
-CRM management, website design, digital content creation, lead research,
-and executive support for fast-paced business environments.
-</p>
+
+<a href="#contact" class="btn btn-primary">Hire Me</a>
+<a href="#experience" class="btn btn-secondary">View Experience</a>
 </div>
 </div>
 
 <!-- ABOUT -->
-
 <section>
-<h2 class="title">About Me</h2>
+<div class="title">About Me</div>
 <div class="card">
-Seasoned Executive Assistant and creative professional with over 15+ years of experience supporting executives and service-based businesses since 2011.  
-Expert in administrative operations, CRM systems, website management, digital content creation, and research—delivering organized, reliable, and high-level support in fast-paced environments.
+Seasoned Executive Assistant and creative professional with over 15+ years of diverse experience supporting executives and service-based businesses since 2011. Expert in administrative operations, CRM systems, website management, digital content creation, and research.
 </div>
 </section>
 
 <!-- CORE STRENGTHS -->
-
 <section>
-<h2 class="title">Core Strengths</h2>
+<div class="title">Core Strengths</div>
 <div class="card skills">
 
-<span>Executive Support & Administration</span> <span>Calendar Management</span> <span>Inbox Management</span> <span>Communication Handling</span> <span>CRM Management (Zoho, HubSpot, GoHighLevel, Pipedrive)</span> <span>Website & Funnel Design</span> <span>Domain Setup & Integrations (GoDaddy)</span> <span>Graphic Design (Canva)</span> <span>Video Editing (CapCut, Descript)</span> <span>Lead Research & Boolean Search</span> <span>Data Encoding (50–60 WPM, 100% Accuracy)</span> <span>AI Tools (ChatGPT, Perplexity, Gamma)</span>
+<span>Executive Support</span>
+<span>Calendar & Inbox Management</span>
+<span>CRM Systems (Zoho, HubSpot, GoHighLevel)</span>
+<span>Website Design (WordPress, Wix, Squarespace)</span>
+<span>Landing Pages</span>
+<span>Graphic Design (Canva, Photoshop)</span>
+<span>Video Editing (CapCut, Descript)</span>
+<span>Lead Research & Boolean Search</span>
+<span>Data Encoding 50–60 WPM</span>
+<span>AI Tools (ChatGPT, Claude, Perplexity)</span>
 
 </div>
 </section>
 
 <!-- EXPERIENCE -->
-
-<section>
-<h2 class="title">Professional Experience</h2>
-
-<div class="grid">
+<section id="experience">
+<div class="title">Professional Experience</div>
 
 <div class="card">
-<h3>Executive Assistant</h3>
-<p>Managed calendars, inboxes, CRM systems, communication flow, and executive-level administrative tasks.</p>
+<div class="job-title">Website & Landing Page Designer / Graphic Designer</div>
+<div class="meta">July 2024 – Present | Freelance</div>
+Designed websites, landing pages, funnels, graphics, and email campaigns.
 </div>
 
 <div class="card">
-<h3>Website & Funnel Designer</h3>
-<p>Built landing pages, funnels, and full websites using Squarespace, WordPress, Wix, and GoHighLevel.</p>
+<div class="job-title">Executive Assistant & Website Editor</div>
+<div class="meta">Malu Productions Inc. | Nov 2020 – Jun 2024</div>
+Managed calendars, inbox, documents, and websites.
 </div>
 
 <div class="card">
-<h3>Graphic Designer</h3>
-<p>Created branding materials, social media graphics, presentations, and marketing visuals using Canva and design tools.</p>
+<div class="job-title">Executive Assistant</div>
+<div class="meta">Kemit Group LLC | Dec 2020 – Jul 2023</div>
+CRM management, legal docs, scheduling, events support.
 </div>
 
 <div class="card">
-<h3>Lead Researcher</h3>
-<p>Performed detailed lead research, data validation, and structured information gathering for business campaigns.</p>
+<div class="job-title">Senior Quality Assurance Specialist</div>
+<div class="meta">Agent1099 | Jan 2018 – Aug 2020 | California</div>
+Audited data, ensured compliance, improved quality systems.
 </div>
 
 <div class="card">
-<h3>CRM Specialist</h3>
-<p>Experienced in Zoho CRM, HubSpot, GoHighLevel, and Pipedrive for workflow automation and client management.</p>
+<div class="job-title">Processing Coordinator & Lead Researcher</div>
+<div class="meta">Corona Capital Group | Feb 2011 – Apr 2018</div>
+Prepared legal documents and performed lead research.
 </div>
 
+<div class="card">
+<div class="job-title">Lead Researcher</div>
+<div class="meta">Angels Data Ltd | Nov 2014 – Mar 2016 | UK</div>
+Boolean search lead research and data verification.
 </div>
+
+<div class="card">
+<div class="job-title">Data Encoder</div>
+<div class="meta">Welkin Data Services | Jun 2003 – Sep 2004</div>
+High-speed accurate data encoding.
+</div>
+
 </section>
 
 <!-- EDUCATION -->
-
 <section>
-<h2 class="title">Education</h2>
+<div class="title">Education</div>
 <div class="card">
-Laguna College — San Pablo City, Laguna, Philippines
+Bachelor of Science in Industrial Engineering<br>
+Laguna College, San Pablo City
 </div>
 </section>
 
 <!-- CONTACT -->
-
-<section>
-<h2 class="title">Contact</h2>
-<div class="card contact">
-<p>Email: cristina.bautista0601@gmail.com</p>
-<p>Phone: +63 954 260 2045</p>
-<p>Location: Philippines (Remote)</p>
-<p>Portfolio: https://expert-va-partner-ng00czj.gamma.site/</p>
+<section id="contact">
+<div class="title">Contact</div>
+<div class="card">
+Email: cristina.bautista0601@gmail.com<br>
+Phone: +63 954 260 2045<br>
+Location: Philippines (Remote)<br>
+Portfolio: expert-va-partner-ng00czj.gamma.site
 </div>
 </section>
 
