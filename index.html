@@ -1,9 +1,10 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cristina Bautista | Executive Assistant</title>
+<title>Cristina Bautista | Executive Assistant Portfolio</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
@@ -12,296 +13,303 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
+    scroll-behavior:smooth;
 }
 
 body{
     font-family:'Poppins',sans-serif;
-    background:#f5f7fa;
-    color:#333;
-    line-height:1.6;
+    background:#0b1220;
+    color:#fff;
 }
 
-.container{
-    max-width:1200px;
-    margin:auto;
-    padding:40px 20px;
-}
-
+/* HERO */
 .hero{
-    background:#1e293b;
-    color:white;
-    padding:60px 40px;
-    border-radius:20px;
-    margin-bottom:30px;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:40px;
+    background:
+    radial-gradient(circle at top left,#7c3aed 0%,transparent 40%),
+    radial-gradient(circle at bottom right,#2563eb 0%,transparent 40%),
+    #0b1220;
 }
 
 .hero h1{
-    font-size:48px;
+    font-size:64px;
     margin-bottom:10px;
+}
+
+.hero h1 span{
+    background:linear-gradient(90deg,#60a5fa,#a78bfa);
+    -webkit-background-clip:text;
+    color:transparent;
 }
 
 .hero h2{
-    font-size:20px;
     font-weight:400;
-    opacity:.9;
+    color:#cbd5e1;
+    margin-bottom:20px;
 }
 
-.contact{
-    margin-top:20px;
-    display:flex;
-    flex-wrap:wrap;
+.hero p{
+    max-width:750px;
+    margin:auto;
+    color:#94a3b8;
+    font-size:18px;
+    line-height:1.6;
+}
+
+.buttons{
+    margin-top:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 28px;
+    border-radius:12px;
+    text-decoration:none;
+    font-weight:600;
+    margin:10px;
+    transition:0.3s;
+}
+
+.btn-primary{
+    background:linear-gradient(90deg,#2563eb,#7c3aed);
+    color:white;
+}
+
+.btn-primary:hover{
+    transform:translateY(-3px);
+}
+
+.btn-secondary{
+    border:1px solid rgba(255,255,255,0.2);
+    color:white;
+}
+
+.btn-secondary:hover{
+    background:rgba(255,255,255,0.1);
+}
+
+/* SECTIONS */
+section{
+    padding:80px 20px;
+    max-width:1100px;
+    margin:auto;
+}
+
+.section-title{
+    font-size:32px;
+    margin-bottom:30px;
+    text-align:center;
+    color:#e2e8f0;
+}
+
+/* GRID */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
     gap:20px;
 }
 
+/* CARDS */
+.card{
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.1);
+    padding:25px;
+    border-radius:16px;
+    backdrop-filter:blur(10px);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    background:rgba(255,255,255,0.08);
+}
+
+.card h3{
+    margin-bottom:10px;
+    color:#93c5fd;
+}
+
+/* SKILLS */
+.skills span{
+    display:inline-block;
+    padding:8px 12px;
+    margin:5px;
+    border-radius:20px;
+    background:rgba(99,102,241,0.2);
+    font-size:13px;
+}
+
+/* STATS */
+.stats{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+    margin-top:40px;
+}
+
+.stat{
+    text-align:center;
+}
+
+.stat h3{
+    font-size:36px;
+    color:#a78bfa;
+}
+
+/* CONTACT */
+.contact{
+    text-align:center;
+}
+
 .contact a{
-    color:white;
+    color:#93c5fd;
+    display:block;
+    margin:5px;
     text-decoration:none;
 }
 
-.grid{
-    display:grid;
-    grid-template-columns:1fr 2fr;
-    gap:30px;
-}
-
-.card{
-    background:white;
-    padding:25px;
-    border-radius:20px;
-    box-shadow:0 4px 15px rgba(0,0,0,.08);
-    margin-bottom:25px;
-}
-
-h3{
-    color:#1e293b;
-    margin-bottom:15px;
-    border-bottom:2px solid #e2e8f0;
-    padding-bottom:10px;
-}
-
-ul{
-    padding-left:20px;
-}
-
-li{
-    margin-bottom:10px;
-}
-
-.skill{
-    display:inline-block;
-    background:#e2e8f0;
-    color:#1e293b;
-    padding:8px 12px;
-    border-radius:20px;
-    margin:5px;
-    font-size:14px;
-}
-
-.job{
-    margin-bottom:25px;
-}
-
-.job h4{
-    color:#0f172a;
-    margin-bottom:5px;
-}
-
-.job p{
-    color:#64748b;
-    margin-bottom:10px;
-}
-
-.footer{
+footer{
     text-align:center;
-    margin-top:30px;
+    padding:30px;
     color:#64748b;
-}
-
-@media(max-width:768px){
-    .grid{
-        grid-template-columns:1fr;
-    }
-
-    .hero h1{
-        font-size:36px;
-    }
+    border-top:1px solid rgba(255,255,255,0.1);
 }
 </style>
+
 </head>
 
 <body>
 
-<div class="container">
+<!-- HERO -->
 
-    <section class="hero">
-        <h1>Cristina Bautista</h1>
-        <h2>Executive Assistant • Website & Funnel Designer • Graphic Designer • Lead Researcher</h2>
+<div class="hero">
+    <div>
+        <h1>Cristina <span>Bautista</span></h1>
+        <h2>Executive Assistant • Website Designer • Graphic Designer • Lead Researcher</h2>
+        <p>
+            I help entrepreneurs and businesses streamline operations, manage workflows,
+            build high-converting websites, and support executive-level tasks with precision
+            and creativity.
+        </p>
 
-        <div class="contact">
-            <a href="mailto:cristina.bautista0601@gmail.com">cristina.bautista0601@gmail.com</a>
-            <span>+63 954 260 2045</span>
-            <a href="https://expert-va-partner-ng00czj.gamma.site/" target="_blank">Portfolio Website</a>
-            <span>Philippines • Remote</span>
-        </div>
-    </section>
-
-    <div class="grid">
-
-        <div>
-
-            <div class="card">
-                <h3>About Me</h3>
-                <p>
-                    Seasoned Executive Assistant and creative professional with
-                    15+ years of experience supporting executives, entrepreneurs,
-                    and service-based businesses. Skilled in administrative
-                    operations, CRM management, website design, lead research,
-                    content creation, and workflow optimization.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>Core Strengths</h3>
-
-                <span class="skill">Executive Support</span>
-                <span class="skill">Calendar Management</span>
-                <span class="skill">Inbox Management</span>
-                <span class="skill">CRM Management</span>
-                <span class="skill">Website Design</span>
-                <span class="skill">Landing Pages</span>
-                <span class="skill">Sales Funnels</span>
-                <span class="skill">Graphic Design</span>
-                <span class="skill">Lead Research</span>
-                <span class="skill">Boolean Search</span>
-                <span class="skill">Project Coordination</span>
-                <span class="skill">Data Entry</span>
-            </div>
-
-            <div class="card">
-                <h3>Tools & Technologies</h3>
-
-                <span class="skill">Zoho CRM</span>
-                <span class="skill">HubSpot</span>
-                <span class="skill">GoHighLevel</span>
-                <span class="skill">Pipedrive</span>
-                <span class="skill">Squarespace</span>
-                <span class="skill">WordPress</span>
-                <span class="skill">Wix</span>
-                <span class="skill">Famous.ai</span>
-                <span class="skill">Canva</span>
-                <span class="skill">CapCut</span>
-                <span class="skill">Descript</span>
-                <span class="skill">ChatGPT</span>
-                <span class="skill">Perplexity</span>
-                <span class="skill">Gamma</span>
-                <span class="skill">Google Workspace</span>
-            </div>
-
-            <div class="card">
-                <h3>Education</h3>
-                <p><strong>Laguna College</strong></p>
-                <p>San Pablo City, Laguna, Philippines</p>
-            </div>
-
-        </div>
-
-        <div>
-
-            <div class="card">
-                <h3>Professional Summary</h3>
-                <p>
-                    Highly organized Executive Assistant, Website & Funnel Designer,
-                    Graphic Designer, and Lead Researcher with 15+ years of diverse
-                    experience across administrative support, research, data
-                    management, and digital design. Proven ability to manage executive
-                    priorities, streamline operations, handle complex projects,
-                    and deliver creative solutions with efficiency and precision.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>Professional Experience</h3>
-
-                <div class="job">
-                    <h4>Website & Funnel Designer / Graphic Designer</h4>
-                    <ul>
-                        <li>Designed and built websites, landing pages, and sales funnels.</li>
-                        <li>Created branded graphics, social media content, and email campaigns.</li>
-                        <li>Managed domain setup, integrations, and automations.</li>
-                    </ul>
-                </div>
-
-                <div class="job">
-                    <h4>Executive Assistant & Website Editor</h4>
-                    <ul>
-                        <li>Managed executive calendars, inboxes, and communications.</li>
-                        <li>Prepared documents, presentations, and website updates.</li>
-                        <li>Created graphics and marketing materials.</li>
-                        <li>Managed Cognito Forms and internal workflows.</li>
-                    </ul>
-                </div>
-
-                <div class="job">
-                    <h4>Executive Assistant</h4>
-                    <ul>
-                        <li>Handled high-volume inboxes, scheduling, and reminders.</li>
-                        <li>Prepared legal documents and contract packages.</li>
-                        <li>Managed Zoho CRM systems and automations.</li>
-                        <li>Supported events, courses, and presentations.</li>
-                    </ul>
-                </div>
-
-                <div class="job">
-                    <h4>Senior Quality Assurance Specialist</h4>
-                    <p>California, United States</p>
-                    <ul>
-                        <li>Audited submitted data for accuracy and compliance.</li>
-                        <li>Identified issues and ensured timely resolution.</li>
-                        <li>Improved quality standards and internal processes.</li>
-                    </ul>
-                </div>
-
-                <div class="job">
-                    <h4>Processing Coordinator & Lead Researcher</h4>
-                    <ul>
-                        <li>Prepared and processed legal documentation.</li>
-                        <li>Created contract packages and deal documents.</li>
-                        <li>Performed lead research and data verification.</li>
-                        <li>Maintained accurate client information records.</li>
-                    </ul>
-                </div>
-
-                <div class="job">
-                    <h4>Lead Researcher</h4>
-                    <p>United Kingdom</p>
-                    <ul>
-                        <li>Conducted SMB lead research using Boolean searching.</li>
-                        <li>Verified and organized prospect data.</li>
-                        <li>Delivered accurate leads for business development.</li>
-                    </ul>
-                </div>
-
-                <div class="job">
-                    <h4>Data Encoder</h4>
-                    <p>Binangonan, Calabarzon, Philippines</p>
-                    <ul>
-                        <li>Maintained 50–60 WPM with 100% accuracy.</li>
-                        <li>Handled large volumes of data efficiently.</li>
-                        <li>Consistently exceeded daily targets.</li>
-                    </ul>
-                </div>
-
-            </div>
-
-        </div>
-
+```
+    <div class="buttons">
+        <a href="#contact" class="btn btn-primary">Hire Me</a>
+        <a href="#about" class="btn btn-secondary">Learn More</a>
     </div>
 
-    <div class="footer">
-        © 2026 Cristina Bautista | Executive Assistant • Website Designer • Graphic Designer
+    <div class="stats">
+        <div class="stat">
+            <h3>15+</h3>
+            <p>Years Experience</p>
+        </div>
+        <div class="stat">
+            <h3>100+</h3>
+            <p>Projects</p>
+        </div>
+        <div class="stat">
+            <h3>40+</h3>
+            <p>Tools</p>
+        </div>
+    </div>
+</div>
+```
+
+</div>
+
+<!-- ABOUT -->
+
+<section id="about">
+    <h2 class="section-title">About Me</h2>
+
+```
+<div class="card">
+    Highly experienced Executive Assistant, Website & Funnel Designer, Graphic Designer,
+    and Lead Researcher with a strong background in administrative operations, CRM systems,
+    digital marketing support, and creative design solutions.
+</div>
+```
+
+</section>
+
+<!-- SKILLS -->
+
+<section>
+    <h2 class="section-title">Core Skills</h2>
+    <div class="card skills">
+        <span>Executive Assistance</span>
+        <span>Calendar Management</span>
+        <span>Email Management</span>
+        <span>CRM (Zoho, HubSpot)</span>
+        <span>Website Design</span>
+        <span>Funnels</span>
+        <span>Graphic Design</span>
+        <span>Lead Research</span>
+        <span>Data Entry</span>
+        <span>Project Coordination</span>
+        <span>Canva</span>
+        <span>Squarespace</span>
+        <span>WordPress</span>
+    </div>
+</section>
+
+<!-- EXPERIENCE -->
+
+<section>
+    <h2 class="section-title">Experience</h2>
+
+```
+<div class="grid">
+
+    <div class="card">
+        <h3>Executive Assistant</h3>
+        <p>Managed executive calendars, emails, CRM systems, documents, and workflow coordination.</p>
+    </div>
+
+    <div class="card">
+        <h3>Website Designer</h3>
+        <p>Built landing pages, funnels, and business websites with conversion-focused design.</p>
+    </div>
+
+    <div class="card">
+        <h3>Graphic Designer</h3>
+        <p>Created branding materials, social media graphics, and marketing visuals.</p>
+    </div>
+
+    <div class="card">
+        <h3>Lead Researcher</h3>
+        <p>Performed detailed lead research, verification, and data organization for businesses.</p>
     </div>
 
 </div>
+```
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+    <h2 class="section-title">Contact</h2>
+
+```
+<div class="card contact">
+    <p>Email: cristina.bautista0601@gmail.com</p>
+    <p>Phone: +63 954 260 2045</p>
+    <p>Location: Philippines (Remote)</p>
+</div>
+```
+
+</section>
+
+<footer>
+    © 2026 Cristina Bautista • Executive Assistant Portfolio
+</footer>
 
 </body>
 </html>
