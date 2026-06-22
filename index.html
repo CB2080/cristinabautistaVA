@@ -9,141 +9,91 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    scroll-behavior:smooth;
-}
-
+*{margin:0;padding:0;box-sizing:border-box}
 body{
-    font-family:'Poppins',sans-serif;
-    background:#0b1220;
-    color:#fff;
+font-family:Poppins,sans-serif;
+background:#0b1220;
+color:#fff;
 }
 
-/* HERO */
 .hero{
-    min-height:100vh;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-    padding:40px;
-    background:
-    radial-gradient(circle at top left,#7c3aed 0%,transparent 40%),
-    radial-gradient(circle at bottom right,#2563eb 0%,transparent 40%),
-    #0b1220;
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:40px;
+background:
+radial-gradient(circle at top left,#7c3aed 0%,transparent 45%),
+radial-gradient(circle at bottom right,#2563eb 0%,transparent 45%),
+#0b1220;
 }
 
-.hero h1{
-    font-size:70px;
-}
-
+.hero h1{font-size:70px}
 .hero h1 span{
-    background:linear-gradient(90deg,#60a5fa,#a78bfa);
-    -webkit-background-clip:text;
-    color:transparent;
+background:linear-gradient(90deg,#60a5fa,#a78bfa);
+-webkit-background-clip:text;
+color:transparent;
 }
 
 .hero p{
-    max-width:800px;
-    margin:20px auto;
-    color:#94a3b8;
-    font-size:18px;
-    line-height:1.6;
+max-width:800px;
+margin:20px auto;
+color:#cbd5e1;
+line-height:1.6;
 }
 
-.btn{
-    display:inline-block;
-    padding:14px 28px;
-    margin:10px;
-    border-radius:12px;
-    text-decoration:none;
-    font-weight:600;
-}
-
-.btn-primary{
-    background:linear-gradient(90deg,#2563eb,#7c3aed);
-    color:#fff;
-}
-
-.btn-secondary{
-    border:1px solid rgba(255,255,255,0.2);
-    color:#fff;
-}
-
-/* SECTIONS */
 section{
-    padding:80px 20px;
-    max-width:1100px;
-    margin:auto;
+padding:80px 20px;
+max-width:1100px;
+margin:auto;
 }
 
 .title{
-    font-size:32px;
-    text-align:center;
-    margin-bottom:40px;
-    color:#e2e8f0;
+font-size:30px;
+text-align:center;
+margin-bottom:30px;
+color:#e2e8f0;
 }
 
-/* CARDS */
 .card{
-    background:rgba(255,255,255,0.05);
-    border:1px solid rgba(255,255,255,0.1);
-    padding:25px;
-    border-radius:16px;
-    backdrop-filter:blur(10px);
-    margin-bottom:20px;
+background:rgba(255,255,255,0.05);
+border:1px solid rgba(255,255,255,0.1);
+padding:25px;
+border-radius:16px;
+margin-bottom:20px;
+backdrop-filter:blur(10px);
 }
 
-/* GRID */
 .grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
 }
 
-/* SKILLS */
 .skills span{
-    display:inline-block;
-    padding:8px 12px;
-    margin:5px;
-    background:rgba(99,102,241,0.2);
-    border-radius:20px;
-    font-size:13px;
+display:inline-block;
+padding:8px 12px;
+margin:5px;
+background:rgba(99,102,241,0.2);
+border-radius:20px;
+font-size:13px;
 }
 
-/* TIMELINE */
-.timeline{
-    border-left:2px solid #4f46e5;
-    padding-left:20px;
-}
-
-.timeline div{
-    margin-bottom:25px;
-}
-
-.timeline h3{
-    color:#93c5fd;
-}
-
-/* CONTACT */
 .contact{
-    text-align:center;
+text-align:center;
 }
 
-.contact a{
-    color:#93c5fd;
-    display:block;
-    margin:5px;
-    text-decoration:none;
+.contact p{
+margin:8px 0;
+color:#cbd5e1;
 }
 
 footer{
-    text-align:center;
-    padding:30px;
-    color:#64748b;
+text-align:center;
+padding:30px;
+color:#64748b;
+border-top:1px solid rgba(255,255,255,0.1);
 }
 </style>
 
@@ -154,129 +104,98 @@ footer{
 <!-- HERO -->
 
 <div class="hero">
-    <div>
-        <h1>Cristina <span>Bautista</span></h1>
-        <p>
-            Executive Assistant • Website Designer • Graphic Designer • Lead Researcher
-        </p>
-        <p>
-            Highly experienced professional with 15+ years in administrative support,
-            CRM systems, website creation, lead research, documentation, and business operations.
-        </p>
-
-```
-    <a href="#contact" class="btn btn-primary">Hire Me</a>
-    <a href="#experience" class="btn btn-secondary">View Experience</a>
+<div>
+<h1>Cristina <span>Bautista</span></h1>
+<p>
+Executive Assistant • Website & Funnel Designer • Graphic Designer • Lead Researcher
+</p>
+<p>
+Seasoned professional with 15+ years of experience in administrative operations,
+CRM management, website design, digital content creation, lead research,
+and executive support for fast-paced business environments.
+</p>
 </div>
-```
-
 </div>
 
 <!-- ABOUT -->
 
 <section>
-    <div class="card">
-        <h2 class="title">Professional Summary</h2>
-        Highly organized Executive Assistant, Website & Funnel Designer, Graphic Designer,
-        and Lead Researcher with 15+ years of experience in administrative support, CRM management,
-        lead generation, and digital design. Skilled in workflow optimization, document preparation,
-        client communication, and website development.
-    </div>
+<h2 class="title">About Me</h2>
+<div class="card">
+Seasoned Executive Assistant and creative professional with over 15+ years of experience supporting executives and service-based businesses since 2011.  
+Expert in administrative operations, CRM systems, website management, digital content creation, and research—delivering organized, reliable, and high-level support in fast-paced environments.
+</div>
 </section>
 
-<!-- SKILLS -->
+<!-- CORE STRENGTHS -->
 
 <section>
-    <h2 class="title">Core Skills & Tools</h2>
-    <div class="card skills">
-        <span>Executive Assistance</span>
-        <span>Calendar Management</span>
-        <span>Email Management</span>
-        <span>CRM (Zoho, HubSpot, Pipedrive)</span>
-        <span>GoHighLevel</span>
-        <span>Squarespace</span>
-        <span>WordPress</span>
-        <span>Wix</span>
-        <span>Canva</span>
-        <span>CapCut</span>
-        <span>Lead Research</span>
-        <span>Boolean Search</span>
-        <span>Data Entry</span>
-        <span>Project Coordination</span>
-        <span>Graphic Design</span>
-    </div>
+<h2 class="title">Core Strengths</h2>
+<div class="card skills">
+
+<span>Executive Support & Administration</span> <span>Calendar Management</span> <span>Inbox Management</span> <span>Communication Handling</span> <span>CRM Management (Zoho, HubSpot, GoHighLevel, Pipedrive)</span> <span>Website & Funnel Design</span> <span>Domain Setup & Integrations (GoDaddy)</span> <span>Graphic Design (Canva)</span> <span>Video Editing (CapCut, Descript)</span> <span>Lead Research & Boolean Search</span> <span>Data Encoding (50–60 WPM, 100% Accuracy)</span> <span>AI Tools (ChatGPT, Perplexity, Gamma)</span>
+
+</div>
 </section>
 
 <!-- EXPERIENCE -->
 
-<section id="experience">
-    <h2 class="title">Professional Experience</h2>
+<section>
+<h2 class="title">Professional Experience</h2>
 
-```
-<div class="timeline">
+<div class="grid">
 
-    <div>
-        <h3>Executive Assistant</h3>
-        <p>Managed executive schedules, inboxes, CRM systems, documentation, and internal communication workflows.</p>
-    </div>
+<div class="card">
+<h3>Executive Assistant</h3>
+<p>Managed calendars, inboxes, CRM systems, communication flow, and executive-level administrative tasks.</p>
+</div>
 
-    <div>
-        <h3>Website & Funnel Designer</h3>
-        <p>Built landing pages, sales funnels, and business websites with conversion-focused design.</p>
-    </div>
+<div class="card">
+<h3>Website & Funnel Designer</h3>
+<p>Built landing pages, funnels, and full websites using Squarespace, WordPress, Wix, and GoHighLevel.</p>
+</div>
 
-    <div>
-        <h3>Graphic Designer</h3>
-        <p>Created branding materials, social media content, presentations, and marketing assets.</p>
-    </div>
+<div class="card">
+<h3>Graphic Designer</h3>
+<p>Created branding materials, social media graphics, presentations, and marketing visuals using Canva and design tools.</p>
+</div>
 
-    <div>
-        <h3>Lead Researcher</h3>
-        <p>Conducted advanced lead research, verification, and data organization for business development teams.</p>
-    </div>
+<div class="card">
+<h3>Lead Researcher</h3>
+<p>Performed detailed lead research, data validation, and structured information gathering for business campaigns.</p>
+</div>
 
-    <div>
-        <h3>Senior Quality Assurance Specialist (USA - California)</h3>
-        <p>Audited data accuracy, ensured compliance, and improved internal quality systems.</p>
-    </div>
-
-    <div>
-        <h3>Processing Coordinator & Lead Researcher</h3>
-        <p>Prepared legal documents, managed contracts, and conducted detailed research for structured deals.</p>
-    </div>
-
-    <div>
-        <h3>Lead Researcher (UK)</h3>
-        <p>Performed SMB lead research using Boolean search and verified prospect data for outreach campaigns.</p>
-    </div>
-
-    <div>
-        <h3>Data Encoder (Philippines)</h3>
-        <p>Achieved 50–60 WPM with high accuracy while handling large-scale data encoding tasks.</p>
-    </div>
+<div class="card">
+<h3>CRM Specialist</h3>
+<p>Experienced in Zoho CRM, HubSpot, GoHighLevel, and Pipedrive for workflow automation and client management.</p>
+</div>
 
 </div>
-```
+</section>
 
+<!-- EDUCATION -->
+
+<section>
+<h2 class="title">Education</h2>
+<div class="card">
+Laguna College — San Pablo City, Laguna, Philippines
+</div>
 </section>
 
 <!-- CONTACT -->
 
-<section id="contact">
-    <h2 class="title">Contact</h2>
-
-```
+<section>
+<h2 class="title">Contact</h2>
 <div class="card contact">
-    <p>Email: cristina.bautista0601@gmail.com</p>
-    <p>Phone: +63 954 260 2045</p>
-    <p>Location: Philippines (Remote)</p>
+<p>Email: cristina.bautista0601@gmail.com</p>
+<p>Phone: +63 954 260 2045</p>
+<p>Location: Philippines (Remote)</p>
+<p>Portfolio: https://expert-va-partner-ng00czj.gamma.site/</p>
 </div>
-```
-
 </section>
 
 <footer>
-    © 2026 Cristina Bautista • Executive Assistant Portfolio
+© 2026 Cristina Bautista • Executive Assistant Portfolio
 </footer>
 
 </body>
